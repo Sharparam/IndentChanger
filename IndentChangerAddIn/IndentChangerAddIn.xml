@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IndentChangerAddIn</name>
+    </assembly>
+    <members>
+        <member name="T:IndentChangerAddIn.CommandBar">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:IndentChangerAddIn.CommandBar.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:IndentChangerAddIn.CommandBar.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:IndentChangerAddIn.Connect">
+            <summary>The object for implementing an add-in.</summary>
+        </member>
+        <member name="P:Qreed.VisualStudio.IVSAddin.ApplicationObject">
+            <summary>
+            Gets the application object.
+            </summary>
+            <value>The application object.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.IVSAddin.AddInInstance">
+            <summary>
+            Gets the add in instance.
+            </summary>
+            <value>The add in instance.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.IVSAddin.CommandBarResourceName">
+            <summary>
+            Gets the name of the command bar resource.
+            </summary>
+            <value>The name of the command bar resource.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.IVSAddin.ConnectMode">
+            <summary>
+            Gets the connect mode.
+            </summary>
+            <value>The connect mode.</value>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSAddin.SetupMenuItems">
+            <summary>
+            Override this to create your menu items here.
+            </summary>
+            <returns>The root menu item.</returns>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSAddin.OnAddInsUpdate(System.Array@)">
+            <summary>Implements the OnAddInsUpdate method of the IDTExtensibility2 interface. Receives notification when the collection of Add-ins has changed.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />		
+        </member>
+        <member name="M:Qreed.VisualStudio.VSAddin.OnBeginShutdown(System.Array@)">
+            <summary>Implements the OnBeginShutdown method of the IDTExtensibility2 interface. Receives notification that the host application is being unloaded.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:Qreed.VisualStudio.VSAddin.OnConnection(System.Object,Extensibility.ext_ConnectMode,System.Object,System.Array@)">
+            <summary>Implements the OnConnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being loaded.</summary>
+            <param term='application'>Root object of the host application.</param>
+            <param term='connectMode'>Describes how the Add-in is being loaded.</param>
+            <param term='addInInst'>Object representing this Add-in.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:Qreed.VisualStudio.VSAddin.OnDisconnection(Extensibility.ext_DisconnectMode,System.Array@)">
+            <summary>Implements the OnDisconnection method of the IDTExtensibility2 interface. Receives notification that the Add-in is being unloaded.</summary>
+            <param term='disconnectMode'>Describes how the Add-in is being unloaded.</param>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:Qreed.VisualStudio.VSAddin.OnStartupComplete(System.Array@)">
+            <summary>Implements the OnStartupComplete method of the IDTExtensibility2 interface. Receives notification that the host application has completed loading.</summary>
+            <param term='custom'>Array of parameters that are host application specific.</param>
+            <seealso class='IDTExtensibility2' />
+        </member>
+        <member name="M:Qreed.VisualStudio.VSAddin.Exec(System.String,EnvDTE.vsCommandExecOption,System.Object@,System.Object@,System.Boolean@)">
+            <summary>Implements the Exec method of the IDTCommandTarget interface. This is called when the command is invoked.</summary>
+            <param term='cmdName'>The name of the command to execute.</param>
+            <param term='executeOption'>Describes how the command should be run.</param>
+            <param term='varIn'>Parameters passed from the caller to the command handler.</param>
+            <param term='varOut'>Parameters passed from the command handler to the caller.</param>
+            <param term='handled'>Informs the caller if the command was handled or not.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="M:Qreed.VisualStudio.VSAddin.QueryStatus(System.String,EnvDTE.vsCommandStatusTextWanted,EnvDTE.vsCommandStatus@,System.Object@)">
+            <summary>Implements the QueryStatus method of the IDTCommandTarget interface. This is called when the command's availability is updated</summary>
+            <param term='commandName'>The name of the command to determine state for.</param>
+            <param term='neededText'>Text that is needed for the command.</param>
+            <param term='status'>The state of the command in the user interface.</param>
+            <param term='commandText'>Text requested by the neededText parameter.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="P:Qreed.VisualStudio.VSAddin.RootMenu">
+            <summary>
+            Gets the root menu.
+            </summary>
+            <value>The root menu.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSAddin.ApplicationObject">
+            <summary>
+            Gets the application object.
+            </summary>
+            <value>The application object.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSAddin.AddInInstance">
+            <summary>
+            Gets the addin instance.
+            </summary>
+            <value>The addin instance.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSAddin.CommandBarResourceName">
+            <summary>
+            Gets the name of the command bar resource.
+            </summary>
+            <value>The name of the command bar resource.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSAddin.ConnectMode">
+            <summary>
+            Gets the connect mode.
+            </summary>
+            <value>The connect mode.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSAddin.IsCommandLineBuild">
+            <summary>
+            Gets a value indicating whether this instance is command line build.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is command line build; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSMenu.#ctor(Qreed.VisualStudio.IVSAddin,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Qreed.VisualStudio.VSMenu"/> class.
+            </summary>
+            <param name="connect">The connect.</param>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSMenu.AddCommand(System.String,System.String,System.String)">
+            <summary>
+            Adds the command.
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="displayName">The display name.</param>
+            <param name="description">The description.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSMenu.Exec(System.String,EnvDTE.vsCommandExecOption,System.Object@,System.Object@,System.Boolean@)">
+            <summary>
+            Execs the specified command name.
+            </summary>
+            <param name="commandName">Name of the command.</param>
+            <param name="executeOption">The execute option.</param>
+            <param name="varIn">The var in.</param>
+            <param name="varOut">The var out.</param>
+            <param name="handled">if set to <c>true</c> [handled].</param>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSMenu.QueryStatus(System.String,EnvDTE.vsCommandStatusTextWanted,EnvDTE.vsCommandStatus@,System.Object@)">
+            <summary>Implements the QueryStatus method of the IDTCommandTarget interface. This is called when the command's availability is updated</summary>
+            <param term='commandName'>The name of the command to determine state for.</param>
+            <param term='neededText'>Text that is needed for the command.</param>
+            <param term='status'>The state of the command in the user interface.</param>
+            <param term='commandText'>Text requested by the neededText parameter.</param>
+            <seealso class='Exec' />
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenu.VSAddin">
+            <summary>
+            Gets the connect.
+            </summary>
+            <value>The connect.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenu.ToolsMenuName">
+            <summary>
+            Gets the name of the tools menu.
+            </summary>
+            <value>The name of the tools menu.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenu.MenuCommands">
+            <summary>
+            Gets the menu commands.
+            </summary>
+            <value>The menu commands.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenu.Popup">
+            <summary>
+            Gets the popup.
+            </summary>
+            <value>The popup.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenu.Item(System.String)">
+            <summary>
+            Gets the <see cref="!:NUnitit.VSMenuCommand"/> with the specified command name.
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSMenuCommand.#ctor(Qreed.VisualStudio.VSMenu,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Qreed.VisualStudio.VSMenuCommand"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="displayName">The display name.</param>
+            <param name="description">The description.</param>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSMenuCommand.OnExecute">
+            <summary>
+            Called when the command is executed.
+            </summary>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSMenuCommand.SetImage(System.Drawing.Image)">
+            <summary>
+            Sets the image.
+            </summary>
+            <param name="image">The image.</param>
+        </member>
+        <member name="M:Qreed.VisualStudio.VSMenuCommand.OnQueryStatus(EnvDTE.vsCommandStatusTextWanted,EnvDTE.vsCommandStatus@,System.Object@)">
+            <summary>
+            Implements the QueryStatus method of the IDTCommandTarget interface. This is called when the command's availability is updated
+            </summary>
+            <param name="neededText">Text that is needed for the command.</param>
+            <param name="status">The state of the command in the user interface.</param>
+            <param name="commandText">Text requested by the neededText parameter.</param>
+        </member>
+        <member name="E:Qreed.VisualStudio.VSMenuCommand.Execute">
+            <summary>
+            Occurs when the command is executed.
+            </summary>
+        </member>
+        <member name="E:Qreed.VisualStudio.VSMenuCommand.QueryStatus">
+            <summary>
+            Occurs when the IDE queries the item status.
+            </summary>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuCommand.Menu">
+            <summary>
+            Gets the menu.
+            </summary>
+            <value>The menu.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuCommand.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuCommand.DisplayName">
+            <summary>
+            Gets the display name.
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuCommand.Description">
+            <summary>
+            Gets the description.
+            </summary>
+            <value>The description.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuCommand.Command">
+            <summary>
+            Gets the command.
+            </summary>
+            <value>The command.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuCommand.CommandName">
+            <summary>
+            Gets the name of the command.
+            </summary>
+            <value>The name of the command.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuCommand.Button">
+            <summary>
+            Gets the button.
+            </summary>
+            <value>The button.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuQueryStatusEventArgs.NeededText">
+            <summary>
+            Gets or sets the text that is needed for the command.
+            </summary>
+            <value>The needed text.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuQueryStatusEventArgs.Status">
+            <summary>
+            Gets or sets the state of the command in the user interface.
+            </summary>
+            <value>The status.</value>
+        </member>
+        <member name="P:Qreed.VisualStudio.VSMenuQueryStatusEventArgs.CommandText">
+            <summary>
+            Gets or sets the text requested by the <see cref="P:Qreed.VisualStudio.VSMenuQueryStatusEventArgs.NeededText"/> parameter.
+            </summary>
+            <value>The command text.</value>
+        </member>
+    </members>
+</doc>

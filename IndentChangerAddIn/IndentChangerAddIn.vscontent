@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VSContent xmlns="http://schemas.microsoft.com/developer/vscontent/2005">
+  <Content>
+    <FileName>IndentChangerAddIn.AddIn</FileName>
+    <FileName>IndentChangerAddIn.dll</FileName>
+    <DisplayName>Indentation mode changer</DisplayName>
+    <Description>Provides quick menu access to change the editor indentation mode (space or tabs).</Description>
+    <FileContentType>Addin</FileContentType>
+    <ContentVersion>2.0</ContentVersion>
+  </Content>
+</VSContent>
